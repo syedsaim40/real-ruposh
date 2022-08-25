@@ -1,0 +1,65 @@
+.CartItemCard {
+  display: flex;
+  padding: 1vmax;
+  height: 8vmax;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.CartItemCard > a > img {
+  width: 5vmax;
+}
+
+.CartItemCard > div {
+  display: flex;
+  margin: 0.3vmax 1vmax;
+  justify-content: center;
+  flex-direction: column;
+}
+.CartItemCard > div > a {
+  color: rgba(24, 24, 24, 0.815);
+  text-decoration: none;
+}
+.CartItemCard > div > span {
+  color: rgba(24, 24, 24, 0.815);
+}
+.CartItemCard > div > p {
+  align-items: center;
+  cursor: pointer;
+}
+.CartItemCard > div > p:hover {
+  color: red;
+}
+
+@media screen and (max-width: 480px) {
+  .cartContainer {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  .CartItemCard {
+    padding: 20px;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    align-items: unset;
+  }
+  .CartItemCard a{
+    float: left;
+  }
+  .CartItemCard > img {
+    width: 10vmax;
+  }
+  .CartItemCard > div {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    float: none;
+    justify-content: unset;
+    flex-direction: unset;
+  }
+  .CartItemCard > div > p svg{
+    font-size: 30px;
+  }
+  .CartItemCard > div > span {
+    display: block;
+  }
+}

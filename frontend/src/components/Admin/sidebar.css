@@ -1,0 +1,60 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: var(--themeColor);
+  padding: 1rem;
+}
+.sidebar a:focus,
+.sidebar a ul li div.MuiTreeItem-label:focus,
+.sidebar a ul li div.MuiTreeItem-label:hover,
+.sidebar a:hover {
+  color: var(--lightColor);
+  background-color: var(--themeColor) !important;
+  background: var(--themeColor) !important;
+}
+.sidebar .MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label{
+  background-color: var(--themeColor);
+}
+.sidebar a:focus .sidebar .MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label,
+.sidebar a:hover .sidebar .MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label{
+  background-color: var(--themeColor);
+  color: #fff;
+}
+.sidebar a:hover div.MuiTreeItem-content{
+  background-color: var(--themeColor);
+  color: #fff;
+}
+.sidebar a:focus svg.MuiSvgIcon-root,
+.sidebar a:hover svg.MuiSvgIcon-root{
+  fill: #fff;
+}
+.sidebar a > P {
+  display: flex;
+  align-items: center;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+@media screen and (max-width: 999px) {
+  .sidebar {
+    padding: 0px;
+    margin-bottom: 20px;
+}
+  .sidebar > a > img {
+    width: 40%;
+    margin-left: 200px;
+    transition: all 0.5s;
+  }
+  .sidebar a:first-child{
+    border-top: 1px solid var(--lightBorder);
+  }
+  .sidebar a {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--lightBorder);
+  }
+}

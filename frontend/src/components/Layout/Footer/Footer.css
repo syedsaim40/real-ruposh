@@ -1,0 +1,206 @@
+/* footer{
+  padding: 100px 20px;
+} */
+.top_footer{
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+}
+.tf_box{
+  width: 25%;
+  background: var(--themeColor);
+  display: inline-flex;
+  flex-direction: row;
+  padding: 50px 25px;
+  color: var(--lightColor);
+}
+.tf_box .tf_con{
+  color: var(--lightColor);
+  display: flex;
+}
+.tf_box svg{
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+.mid_footer{
+  text-align: left;
+  overflow: hidden;
+  padding: 50px 100px;
+  text-align: left;
+  background: var(--lightBlue);
+}
+.mf_box{
+  width: 25%;
+  padding: 20px 20px;
+  color: var(--themeColor);
+  display: inline-block;
+  vertical-align: top;
+}
+.mf_box h3{
+  font-weight: 500;
+  display: block;
+  margin-bottom: 20px;
+  color: var(--themeColor);
+}
+.mf_box address{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: block;
+  font-style: normal;
+  color: #4447;
+}
+.mf_box .mail_link{
+  display: flex;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.mf_box .mail_link svg{
+  width: 20px;
+  height: 20px;
+  fill: #4449;
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 5px;
+}
+.mf_box .mail_link a{
+  color: #4449;
+  font-size: 15px;
+  cursor: pointer;
+}
+.mf_box .mail_link a:hover{
+  color: var(--redColor);
+  cursor: pointer;
+}
+.mf_box .mail_link span{
+  color: #4449;
+  font-size: 15px;
+  cursor: pointer;
+}
+.social_icons{
+  text-align: left;
+  padding: 20px 0;
+}
+.social_icons li{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.social_icons li a svg{
+  width: 25px;
+  height: 25px;
+  color: #4449;
+  transition: all ease-in-out 0.1s;
+}
+.social_icons li.fb_icon a:hover svg{
+  fill: #1877f2;
+}
+.social_icons li.insta_icon a:hover svg{
+  fill: red;
+}
+.social_icons li.yt_icon a:hover svg{
+  fill: red;
+}
+ul.services_list{
+  text-align: left;
+}
+ul.services_list li{
+  display: block;
+  padding: 10px 0;
+}
+ul.services_list li a{
+  color: #4449;
+}
+ul.services_list li a:hover{
+  color: var(--redColor);
+}
+.bottom_footer{
+  padding: 30px 30px;
+  background: var(--lightColor);
+  overflow: hidden;
+}
+.bottom_footer span:first-child{
+  display: inline-block;
+  padding-top: 10px;
+}
+.bottom_footer img{
+  float: right;
+  width: 40px;
+  height: auto;
+  margin: 0 20px 0 0;
+}
+div.Collapsible,
+div.Collapsible.accordian_footer{
+  display: none;
+}
+div.Collapsible span.Collapsible__trigger,
+div.Collapsible.accordian_footer span.Collapsible__trigger{
+  display: block;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 1px solid #4443;
+  text-transform: uppercase;
+}
+div.Collapsible span.Collapsible__trigger:focus,
+div.Collapsible.accordian_footer span.Collapsible__trigger:focus,
+div.Collapsible span.Collapsible__trigger:hover,
+div.Collapsible.accordian_footer span.Collapsible__trigger:hover{
+  background: #444;
+  color: #fff;
+}
+div.Collapsible .mf_box,
+div.Collapsible.accordian_footer .mf_box{
+  width: 100%;
+}
+.ruposh_subs{
+  padding: 5px 0px;
+}
+.mail_link {
+  cursor: pointer !important;
+}
+.ruposh_subs input{
+  display: block;
+  padding: 10px 10px;
+  width: 100%;
+  border-bottom: 0px;
+  border-top: 1px solid;
+}
+.ruposh_subs button{
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.ruposh_subs button svg{
+  font-size: 13px;
+  margin-right: 5px;
+  transform: rotate(-50deg);
+}
+.services_list p{
+  font-size: 15px;
+  line-height: normal;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 999px) {
+  div.Collapsible,
+  div.Collapsible.accordian_footer{
+    display: block;
+  }
+  .mid_footer{
+    display: none;
+  }
+  .bottom_footer,
+  #footer{
+    border-top: 1px solid #4448;
+  }
+  .mf_box .mail_link svg {
+    width: 20px;
+    height: 15px;
+  }
+}

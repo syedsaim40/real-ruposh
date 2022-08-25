@@ -1,0 +1,63 @@
+.productListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--lightColor);
+  border-left: 1px solid var(--themeColor);
+  display: flex;
+  flex-direction: column;
+}
+.productListContainer div.MuiDataGrid-root.MuiDataGrid-autoHeight,
+.productListContainer div.MuiDataGrid-root{
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: var(--boxShadow);
+}
+.DataGrid {
+  z-index: 0;
+}
+#productListHeading {
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: var(--themeColor);
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+.productListTable {
+  z-index: 0;
+  background-color: var(--lightColor);
+  border: none !important;
+}
+.productListTable div {
+  color: var(--themeColor);
+  border: none !important;
+}
+.productListTable a,
+.productListTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+.productListTable a:hover {
+  color: blue;
+}
+.productListTable button:hover {
+  color: rgb(236, 30, 30);
+}
+.MuiDataGrid-columnHeader div {
+  color: var(--lightColor);
+}
+
+
+
+@media screen and (max-width: 999px) {
+  .productListContainer{
+    border-left: 0px;
+  }
+  .productListContainer div.MuiDataGrid-root.MuiDataGrid-autoHeight,
+  .productListContainer div.MuiDataGrid-root{
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  
+}

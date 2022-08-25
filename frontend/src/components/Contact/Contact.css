@@ -1,0 +1,81 @@
+.contactPage{
+    text-align: center;
+    padding: 100px 50px;
+}
+.contactHolder{
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    text-align: left;
+    font-weight: 300;
+    width: 80%;
+}
+.contactForm{
+    padding: 30px;
+    box-shadow: var(--boxShadow);
+}
+.contactForm h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: var(--themeColor);
+}
+.contactForm form{
+    overflow: hidden;
+    width: 100%;
+}
+.contactForm label{
+    display: block;
+    margin-bottom: 5px;
+}
+.contactForm textarea,
+.contactForm input{
+    outline: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px 5px;
+    border-radius: 0px;
+    border: 1px solid var(--lightBorder);
+}
+.contactForm textarea:focus,
+.contactForm input:focus{
+    border: 1px solid var(--redColor);
+}
+.formGroup:hover label span,
+.formGroup:focus label span{
+    color: var(--redColor);
+}
+.contactForm button.btn_primary{
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 999px) {
+    .contactPage {
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 599px) {
+    .contactForm h1{
+        font-size: 20px;
+    }
+    .contactHolder{
+        padding: 0px;
+        width: 90%;
+    }
+    .contactForm {
+        padding: 20px;
+    }
+    .contactForm textarea, .contactForm input{
+        padding: 10px;
+    }
+    .contactForm label{
+        font-size: 12px;
+    }
+    .contactForm button.btn_primary{
+        padding: 10px;
+    }
+}

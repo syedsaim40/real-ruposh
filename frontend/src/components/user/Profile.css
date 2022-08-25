@@ -1,0 +1,100 @@
+.profileContainer {
+  width: 100%;
+  background-color: var(--lightColor);
+  overflow: hidden;
+  text-align: center;
+  padding: 50px 10px;
+}
+.profileContainer > div {
+  height: auto;
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+.profileContainer > div:first-child > h1 {
+  color: rgba(0, 0, 0, 0.555);
+  transform: translateX(-10vmax) translateY(-2vmax);
+}
+.profileContainer > div:first-child > img {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+.profileContainer div > a.btn_primary{
+  float: none;
+  display: block;
+  margin-bottom: 30px;
+}
+/* .profileContainer > div:first-child > a {
+  border: none;
+  background-color: var(--themeColor);
+  color: var(--lightColor);
+  text-decoration: none;
+  padding: 0.5vmax;
+  width: 30%;
+  margin: 4vmax;
+  text-align: center;
+  transition: all 0.5s;
+}
+.profileContainer > div:first-child > a:hover {
+  background-color: var(--lightColor);
+  border: 1px solid var(--themeColor);
+  color: var(--themeColor);
+} */
+.profileContainer > div:last-child {
+  padding: 0 5vmax;
+  text-align: left;
+}
+.profileContainer > div > div{
+  margin-bottom: 30px;
+}
+.profileContainer > div:last-child > div > h4 {
+  color: var(--themeColor);
+}
+.profileContainer > div:last-child > div > p {
+  color: rgba(0, 0, 0, 0.418);
+  margin: 0.2vmax;
+}
+.profileContainer > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.profileContainer > div:last-child > div:last-child > a{
+  margin-bottom: 20px;
+}
+/* .profileContainer > div:last-child > div:last-child > a {
+  border: none;
+  background-color: rgb(68, 68, 68);
+  color: var(--lightColor);
+  text-decoration: none;
+  padding: 0.5vmax;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 1vmax 0;
+}
+.profileContainer > div:last-child > div:last-child > a:hover {
+  background-color: var(--lightColor);
+  border: 1px solid var(--themeColor);
+  color: var(--themeColor);
+} */
+
+@media screen and (max-width: 600px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+  .profileContainer > div:first-child > h1 {
+    transform: translateY(-2vmax);
+  }
+  .profileContainer > div:last-child {
+    text-align: center;
+    align-items: center;
+  }
+  .profileContainer > div:last-child > div > p {
+    margin: 0.5vmax 0;
+  }
+  .profileContainer > div:last-child > div:last-child > a {
+    padding: 1vmax;
+    margin: 2vmax 0;
+  }
+}
