@@ -38,10 +38,10 @@ app.use("/api/vasal", user); //ye user ka sb ka 1 url ha agey roues mein ja k ch
 //Route import krwaye
 const order = require("./routers/orderroute");
 app.use("/api/vasal", order); //ye order ka sb ka 1 url ha agey roues mein ja k chnge kiye wy create update url
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+// app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+// });
 app.use(errormiddleware);
 module.exports = app;
